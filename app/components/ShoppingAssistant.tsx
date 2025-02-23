@@ -34,9 +34,8 @@ export function ShoppingAssistant() {
         if (!result) {
           throw new Error("No response from OpenAI")
         }
-      } catch (error: any) {
+      } catch {
         console.error("Error fetching recommendations:", error)
-        setErrorMessage(`Failed to get recommendations: ${error.message || "Unknown error"}`)
       }
     }
   }
