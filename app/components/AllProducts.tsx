@@ -84,24 +84,26 @@ export function AllProducts() {
             {displayedProducts.map((product) => (
               <div
                 key={product.id}
-                className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105"
+                className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col"
               >
                 <Link href={`/products/${product.id}`}>
                   <div className="relative h-48">
                     <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
                   </div>
                 </Link>
-                <div className="p-4">
+                <div className="p-4 flex flex-col flex-grow">
                   <Link href={`/products/${product.id}`}>
                     <h3 className="text-lg font-semibold mb-2 text-[#1f513f] hover:text-[#173d2f] transition-colors">
                       {product.name}
                     </h3>
                   </Link>
-                  <p className="text-gray-600 text-sm mb-4 h-12 overflow-hidden">{product.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xl font-bold text-[#1f513f]">${product.price.toFixed(2)}</span>
+                  <p className="text-gray-600 text-sm mb-4 flex-grow">{product.description}</p>
+                  <div className="mt-auto">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xl font-bold text-[#1f513f]">${product.price.toFixed(2)}</span>
+                    </div>
                     <button
-                      className={`px-4 py-2 rounded-full transition-colors flex items-center ${
+                      className={`w-full px-4 py-2 rounded-full transition-colors flex items-center justify-center ${
                         addedProducts[product.id]
                           ? "bg-green-500 text-white"
                           : "bg-[#1f513f] text-white hover:bg-[#173d2f]"
@@ -112,7 +114,7 @@ export function AllProducts() {
                       {addedProducts[product.id] ? (
                         <>
                           <Check className="w-4 h-4 mr-1" />
-                          Added
+                          Added to Cart
                         </>
                       ) : (
                         <>
