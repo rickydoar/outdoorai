@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { products } from "../../lib/products"
 import { useCart } from "../../lib/CartContext"
-import { Check } from "lucide-react"
+import { Check, ShoppingCart } from "lucide-react"
 import { CategoryFilter } from "./CategoryFilter"
 import { useInView } from "react-intersection-observer"
 
@@ -69,10 +69,10 @@ export function AllProducts() {
   }
 
   return (
-    <div>
-      <h2 className="text-2xl font-bold mb-6">All Products</h2>
+    <div className="bg-white rounded-lg shadow-md p-6">
+      <h2 className="text-3xl font-bold text-[#1f513f] mb-6">Our Products</h2>
       <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/4 mb-4 md:mb-0">
+        <div className="w-full md:w-1/4 mb-6 md:mb-0 md:pr-6">
           <CategoryFilter
             categories={allCategories}
             selectedCategories={selectedCategories}
@@ -80,9 +80,12 @@ export function AllProducts() {
           />
         </div>
         <div className="w-full md:w-3/4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {displayedProducts.map((product) => (
-              <div key={product.id} className="border rounded-lg overflow-hidden shadow-lg bg-white">
+              <div
+                key={product.id}
+                className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105"
+              >
                 <Link href={`/products/${product.id}`}>
                   <div className="relative h-48">
                     <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
@@ -90,13 +93,15 @@ export function AllProducts() {
                 </Link>
                 <div className="p-4">
                   <Link href={`/products/${product.id}`}>
-                    <h3 className="text-lg font-semibold mb-2 hover:text-[#1f513f]">{product.name}</h3>
+                    <h3 className="text-lg font-semibold mb-2 text-[#1f513f] hover:text-[#173d2f] transition-colors">
+                      {product.name}
+                    </h3>
                   </Link>
-                  <p className="text-gray-600 mb-4 h-20 overflow-hidden">{product.description}</p>
+                  <p className="text-gray-600 text-sm mb-4 h-12 overflow-hidden">{product.description}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-bold text-[#1f513f]">${product.price.toFixed(2)}</span>
                     <button
-                      className={`px-4 py-2 rounded transition-colors ${
+                      className={`px-4 py-2 rounded-full transition-colors flex items-center ${
                         addedProducts[product.id]
                           ? "bg-green-500 text-white"
                           : "bg-[#1f513f] text-white hover:bg-[#173d2f]"
@@ -106,11 +111,14 @@ export function AllProducts() {
                     >
                       {addedProducts[product.id] ? (
                         <>
-                          <Check className="inline-block w-4 h-4 mr-1" />
+                          <Check className="w-4 h-4 mr-1" />
                           Added
                         </>
                       ) : (
-                        "Add to Cart"
+                        <>
+                          <ShoppingCart className="w-4 h-4 mr-1" />
+                          Add to Cart
+                        </>
                       )}
                     </button>
                   </div>
@@ -120,6 +128,12 @@ export function AllProducts() {
           </div>
           {displayedProducts.length < filteredProducts.length && (
             <div ref={ref} className="flex justify-center mt-8">
+              <button
+                onClick={loadMoreProducts}
+                className="bg-[#1f513f] text-white px-6 py-2 rounded-full hover:bg-[#173d2f] transition-colors"
+              >
+                Load More
+              </button>
             </div>
           )}
         </div>
