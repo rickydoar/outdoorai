@@ -1,35 +1,96 @@
 "use client"
+import { useState, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { products } from "../../lib/products"
 import { useCart } from "../../lib/CartContext"
+import { Check } from "lucide-react"
+import { CategoryFilter } from "../components/CategoryFilter"
 
 export default function ProductListPage() {
   const { addToCart } = useCart()
+  const [addedProducts, setAddedProducts] = useState<{ [key: string]: boolean }>({})
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([])
+  const [filteredProducts, setFilteredProducts] = useState(products)
+
+  // Get unique categories
+  const allCategories = Array.from(new Set(products.flatMap((product) => product.category)))
+
+  useEffect(() => {
+    if (selectedCategories.length === 0) {
+      setFilteredProducts(products)
+    } else {
+      setFilteredProducts(
+        products.filter((product) => product.category.some((cat) => selectedCategories.includes(cat))),
+      )
+    }
+  }, [selectedCategories])
+
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategories((prev) =>
+      prev.includes(category) ? prev.filter((c) => c !== category) : [...prev, category],
+    )
+  }
+
+  const handleAddToCart = (product: (typeof products)[0]) => {
+    addToCart(product)
+    setAddedProducts({ ...addedProducts, [product.id]: true })
+    setTimeout(() => {
+      setAddedProducts({ ...addedProducts, [product.id]: false })
+    }, 2000)
+  }
 
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-8">All Products</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {products.map((product) => (
-          <div key={product.id} className="border rounded-lg overflow-hidden shadow-lg bg-white">
-            <div className="relative h-48">
-              <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
-            </div>
-            <div className="p-4">
-              <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
-              <p className="text-gray-600 mb-4 h-20 overflow-hidden">{product.description}</p>
-              <div className="flex items-center justify-between">
-                <span className="text-xl font-bold text-[#1f513f]">${product.price.toFixed(2)}</span>
-                <button
-                  className="bg-[#1f513f] text-white px-4 py-2 rounded hover:bg-[#173d2f] transition-colors"
-                  onClick={() => addToCart(product)}
-                >
-                  Add to Cart
-                </button>
+      <div className="flex flex-col md:flex-row">
+        <div className="w-full md:w-1/4 mb-4 md:mb-0">
+          <CategoryFilter
+            categories={allCategories}
+            selectedCategories={selectedCategories}
+            onCategoryChange={handleCategoryChange}
+          />
+        </div>
+        <div className="w-full md:w-3/4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredProducts.map((product) => (
+              <div key={product.id} className="border rounded-lg overflow-hidden shadow-lg bg-white">
+                <Link href={`/products/${product.id}`}>
+                  <div className="relative h-48">
+                    <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
+                  </div>
+                </Link>
+                <div className="p-4">
+                  <Link href={`/products/${product.id}`}>
+                    <h3 className="text-lg font-semibold mb-2 hover:text-[#1f513f]">{product.name}</h3>
+                  </Link>
+                  <p className="text-gray-600 mb-4 h-20 overflow-hidden">{product.description}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xl font-bold text-[#1f513f]">${product.price.toFixed(2)}</span>
+                    <button
+                      className={`px-4 py-2 rounded transition-colors ${
+                        addedProducts[product.id]
+                          ? "bg-green-500 text-white"
+                          : "bg-[#1f513f] text-white hover:bg-[#173d2f]"
+                      }`}
+                      onClick={() => handleAddToCart(product)}
+                      disabled={addedProducts[product.id]}
+                    >
+                      {addedProducts[product.id] ? (
+                        <>
+                          <Check className="inline-block w-4 h-4 mr-1" />
+                          Added
+                        </>
+                      ) : (
+                        "Add to Cart"
+                      )}
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   )
