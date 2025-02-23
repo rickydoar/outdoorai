@@ -63,7 +63,7 @@ export function ShoppingAssistant() {
         </form>
         {isLoading && (
           <div className="mt-4 p-4 bg-[#f3f7f5] rounded-lg border border-[#1f513f]/20">
-            <p className="text-gray-700">Fetching recommendations for: "{lastQuery}"</p>
+            <p className="text-gray-700">Fetching recommendations for: &quot;{lastQuery}&quot;</p>
           </div>
         )}
         {completion && !isLoading && (
