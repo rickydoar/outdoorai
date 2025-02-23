@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useCallback } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { products, type Product } from "../../lib/products"
@@ -31,15 +31,18 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
     }
   }, [recommendations])
 
-  const handleAddToCart = (product: Product) => {
-    addToCart(product)
-    setAddedProducts({ ...addedProducts, [product.id]: true })
-    setTimeout(() => {
-      setAddedProducts({ ...addedProducts, [product.id]: false })
-    }, 2000)
-  }
+  const handleAddToCart = useCallback(
+    (product: Product) => {
+      addToCart(product)
+      setAddedProducts((prev) => ({ ...prev, [product.id]: true }))
+      setTimeout(() => {
+        setAddedProducts((prev) => ({ ...prev, [product.id]: false }))
+      }, 2000)
+    },
+    [addToCart],
+  )
 
-  const handleAddAllToCart = () => {
+  const handleAddAllToCart = useCallback(() => {
     recommendedProducts.forEach((product) => {
       addToCart(product)
     })
@@ -47,7 +50,7 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
     setTimeout(() => {
       setAllAdded(false)
     }, 2000)
-  }
+  }, [recommendedProducts, addToCart])
 
   if (isLoading) {
     return (
@@ -58,16 +61,16 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
   }
 
   if (!recommendations) {
-    return null // Don't render anything if there are no recommendations yet
+    return null
   }
 
   return (
-    <div>
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Recommended Products</h2>
+    <div className="mt-8">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
+        <h2 className="text-xl font-semibold mb-2 sm:mb-0">Recommended Products</h2>
         {recommendedProducts.length > 0 && (
           <button
-            className={`px-4 py-2 rounded transition-colors ${
+            className={`w-full sm:w-auto px-4 py-2 rounded transition-colors ${
               allAdded ? "bg-green-500 text-white" : "bg-[#1f513f] text-white hover:bg-[#173d2f]"
             }`}
             onClick={handleAddAllToCart}
@@ -90,23 +93,29 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
       {recommendedProducts.length === 0 ? (
         <p className="text-gray-600">No products found matching your criteria. Try a different query!</p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {recommendedProducts.map((product) => (
             <div key={product.id} className="border rounded-lg overflow-hidden shadow-lg bg-white">
               <Link href={`/products/${product.id}`}>
-                <div className="relative h-48">
-                  <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
+                <div className="relative h-48 sm:h-56">
+                  <Image
+                    src={product.image || "/placeholder.svg"}
+                    alt={product.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
                 </div>
               </Link>
               <div className="p-4">
                 <Link href={`/products/${product.id}`}>
                   <h3 className="text-lg font-semibold mb-2 hover:text-[#1f513f]">{product.name}</h3>
                 </Link>
-                <p className="text-gray-600 mb-4">{product.description}</p>
+                <p className="text-gray-600 mb-4 text-sm">{product.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-bold text-[#1f513f]">${product.price.toFixed(2)}</span>
                   <button
-                    className={`px-4 py-2 rounded transition-colors ${
+                    className={`px-3 py-1 sm:px-4 sm:py-2 rounded transition-colors ${
                       addedProducts[product.id]
                         ? "bg-green-500 text-white"
                         : "bg-[#1f513f] text-white hover:bg-[#173d2f]"
@@ -116,7 +125,7 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
                   >
                     {addedProducts[product.id] ? (
                       <>
-                        <Check className="inline-block w-4 h-4 mr-1" />
+                        <Check className="inline-block w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                         Added
                       </>
                     ) : (
