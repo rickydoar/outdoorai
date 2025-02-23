@@ -10,7 +10,7 @@ interface CartPanelProps {
 }
 
 export function CartPanel({ isOpen, onClose }: CartPanelProps) {
-  const { cart, removeFromCart, updateQuantity, clearCart, getCartTotal } = useCart()
+  const { cart, updateQuantity, clearCart, getCartTotal } = useCart()
 
   if (!isOpen) return null
 
@@ -53,9 +53,6 @@ export function CartPanel({ isOpen, onClose }: CartPanelProps) {
                         </button>
                       </div>
                     </div>
-                    <button className="text-red-500 hover:text-red-700 text-sm" onClick={() => removeFromCart(item.id)}>
-                      Remove
-                    </button>
                   </div>
                 ))}
               </div>
