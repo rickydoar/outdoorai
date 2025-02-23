@@ -37,7 +37,7 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
       setAddedProducts((prev) => ({ ...prev, [product.id]: true }))
       setTimeout(() => {
         setAddedProducts((prev) => ({ ...prev, [product.id]: false }))
-      }, 2000)
+      }, 500)
     },
     [addToCart],
   )
@@ -49,7 +49,7 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
     setAllAdded(true)
     setTimeout(() => {
       setAllAdded(false)
-    }, 2000)
+    }, 500)
   }, [recommendedProducts, addToCart])
 
   if (isLoading) {

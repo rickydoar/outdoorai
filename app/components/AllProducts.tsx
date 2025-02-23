@@ -65,7 +65,7 @@ export function AllProducts() {
     setAddedProducts({ ...addedProducts, [product.id]: true })
     setTimeout(() => {
       setAddedProducts({ ...addedProducts, [product.id]: false })
-    }, 2000)
+    }, 500)
   }
 
   return (
