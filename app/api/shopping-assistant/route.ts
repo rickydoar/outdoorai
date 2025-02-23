@@ -38,17 +38,17 @@ export async function POST(req: Request) {
           content: prompt,
         },
       ],
-      temperature: 0.7,
+      temperature: 0.3,
     })
 
     console.log("OpenAI API response received")
     return result.toDataStreamResponse()
-  } catch (error: any) {
+  } catch (error) {
     console.error("API Error:", error)
     return new Response(
       JSON.stringify({
         error: "An error occurred while processing your request",
-        details: error.message || "Unknown error",
+        details: error instanceof Error ? error.message : "Unknown error",
       }),
       {
         status: 500,
