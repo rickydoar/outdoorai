@@ -18,7 +18,7 @@ export const products: Product[] = [
     category: ["sleeping", "winter-gear"],
     weather: ["cold", "extreme-cold"],
     activities: ["camping", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "tent-tall",
@@ -28,7 +28,7 @@ export const products: Product[] = [
     category: ["shelter", "tents"],
     weather: ["mild", "cold", "rain"],
     activities: ["camping", "backpacking"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "insulated-jacket",
@@ -38,7 +38,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold", "extreme-cold", "wind", "rain"],
     activities: ["hiking", "camping", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "hiking-boots",
@@ -48,7 +48,7 @@ export const products: Product[] = [
     category: ["footwear"],
     weather: ["all-weather"],
     activities: ["hiking", "backpacking", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "climbing-shoes",
@@ -58,7 +58,7 @@ export const products: Product[] = [
     category: ["footwear", "rock climbing"],
     weather: ["all-weather"],
     activities: ["climbing", "rock climbing", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "climbing-harness",
@@ -68,7 +68,7 @@ export const products: Product[] = [
     category: ["rock climbing"],
     weather: ["all-weather"],
     activities: ["rock climbing", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "backpack-65l",
@@ -78,7 +78,7 @@ export const products: Product[] = [
     category: ["bags", "backpacks"],
     weather: ["all-weather"],
     activities: ["hiking", "backpacking", "camping"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "trekking-poles",
@@ -88,7 +88,7 @@ export const products: Product[] = [
     category: ["accessories"],
     weather: ["all-weather"],
     activities: ["hiking", "backpacking", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "camp-stove",
@@ -98,7 +98,7 @@ export const products: Product[] = [
     category: ["cooking", "camp-kitchen"],
     weather: ["all-weather"],
     activities: ["camping", "backpacking"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "water-filter",
@@ -108,7 +108,7 @@ export const products: Product[] = [
     category: ["water", "safety"],
     weather: ["all-weather"],
     activities: ["camping", "hiking", "backpacking"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "down-jacket",
@@ -118,7 +118,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold", "mild"],
     activities: ["hiking", "camping", "casual"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "rain-shell",
@@ -128,7 +128,7 @@ export const products: Product[] = [
     category: ["clothing", "rain-gear"],
     weather: ["rain", "wind"],
     activities: ["hiking", "camping", "casual"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "hiking-pants",
@@ -138,7 +138,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["mild", "warm"],
     activities: ["hiking", "camping", "casual"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "headlamp",
@@ -148,7 +148,7 @@ export const products: Product[] = [
     category: ["accessories", "lighting"],
     weather: ["all-weather"],
     activities: ["camping", "hiking", "emergency"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "bear-canister",
@@ -158,7 +158,7 @@ export const products: Product[] = [
     category: ["food-storage", "safety"],
     weather: ["all-weather"],
     activities: ["camping", "backpacking"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "sleeping-pad",
@@ -168,7 +168,7 @@ export const products: Product[] = [
     category: ["sleeping"],
     weather: ["all-weather", "cold"],
     activities: ["camping", "backpacking"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "camp-chair",
@@ -178,7 +178,7 @@ export const products: Product[] = [
     category: ["furniture", "comfort"],
     weather: ["all-weather"],
     activities: ["camping", "outdoor-events"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "hiking-socks-merino",
@@ -188,7 +188,7 @@ export const products: Product[] = [
     category: ["clothing", "footwear"],
     weather: ["cold", "mild"],
     activities: ["hiking", "camping", "backpacking"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "thermal-socks",
@@ -198,7 +198,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold", "extreme-cold"],
     activities: ["camping", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "base-layer-top",
@@ -208,7 +208,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["all-weather"],
     activities: ["hiking", "camping", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "flannel-shirt",
@@ -218,7 +218,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["mild", "cold"],
     activities: ["camping", "casual"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "softshell-pants",
@@ -228,7 +228,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["cold", "wind"],
     activities: ["hiking", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "thermal-leggings",
@@ -238,7 +238,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold"],
     activities: ["camping", "skiing"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "hiking-shorts",
@@ -248,7 +248,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["warm"],
     activities: ["hiking", "camping"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "winter-gloves",
@@ -258,7 +258,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold", "extreme-cold"],
     activities: ["camping", "mountaineering"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "lightweight-gloves",
@@ -268,7 +268,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["mild"],
     activities: ["hiking", "trail running"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "beanie",
@@ -278,7 +278,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["cold"],
     activities: ["camping", "hiking"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "sun-hat",
@@ -288,7 +288,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["warm"],
     activities: ["hiking", "camping"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "high-end-sleeping-bag",
@@ -298,7 +298,7 @@ export const products: Product[] = [
     category: ["sleeping", "winter-gear"],
     weather: ["extreme-cold"],
     activities: ["mountaineering", "arctic expeditions"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "gps-watch",
@@ -308,7 +308,7 @@ export const products: Product[] = [
     category: ["electronics", "accessories"],
     weather: ["all-weather"],
     activities: ["hiking", "mountaineering", "running", "camping"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "basic-camping-mug",
@@ -318,7 +318,7 @@ export const products: Product[] = [
     category: ["camp-kitchen"],
     weather: ["all-weather"],
     activities: ["camping", "backpacking"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "budget-rain-jacket",
@@ -328,7 +328,7 @@ export const products: Product[] = [
     category: ["clothing", "rain-gear"],
     weather: ["rain", "wind"],
     activities: ["hiking", "casual"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
   {
     id: "cheap-camping-chair",
@@ -338,7 +338,6 @@ export const products: Product[] = [
     category: ["furniture", "comfort"],
     weather: ["all-weather"],
     activities: ["camping", "outdoor-events"],
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   }
 ]
-

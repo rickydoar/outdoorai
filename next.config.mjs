@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: 'www.rei.com',
         pathname: '/media/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'adexusa.com',
+        pathname: '/wp-content/uploads/**',
+      },
     ],
   },
 };
