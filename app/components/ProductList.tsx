@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { products, type Product } from "../../lib/products"
-import { Loader2, Check } from "lucide-react"
+import { Loader2, Check, ShoppingCart } from "lucide-react"
 import { useCart } from "../../lib/CartContext"
 
 interface ProductListProps {
@@ -16,6 +16,7 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
   const [recommendedProducts, setRecommendedProducts] = useState<Product[]>([])
   const { addToCart } = useCart()
   const [addedProducts, setAddedProducts] = useState<{ [key: string]: boolean }>({})
+  const [allAdded, setAllAdded] = useState(false)
 
   useEffect(() => {
     if (recommendations) {
@@ -26,8 +27,7 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
 
       setRecommendedProducts(filteredProducts)
     } else {
-      // Show default products when there are no recommendations
-      setRecommendedProducts(products.slice(0, 6))
+      setRecommendedProducts([])
     }
   }, [recommendations])
 
@@ -39,6 +39,16 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
     }, 2000)
   }
 
+  const handleAddAllToCart = () => {
+    recommendedProducts.forEach((product) => {
+      addToCart(product)
+    })
+    setAllAdded(true)
+    setTimeout(() => {
+      setAllAdded(false)
+    }, 2000)
+  }
+
   if (isLoading) {
     return (
       <div className="flex justify-center items-center h-64">
@@ -47,12 +57,37 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
     )
   }
 
+  if (!recommendations) {
+    return null // Don't render anything if there are no recommendations yet
+  }
+
   return (
     <div>
-      <h2 className="text-xl font-semibold mb-4">
-        {recommendedProducts.length > 0 ? "Recommended Products" : "Featured Products"}
-      </h2>
-      {recommendedProducts.length === 0 && !isLoading ? (
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-xl font-semibold">Recommended Products</h2>
+        {recommendedProducts.length > 0 && (
+          <button
+            className={`px-4 py-2 rounded transition-colors ${
+              allAdded ? "bg-green-500 text-white" : "bg-[#1f513f] text-white hover:bg-[#173d2f]"
+            }`}
+            onClick={handleAddAllToCart}
+            disabled={allAdded}
+          >
+            {allAdded ? (
+              <>
+                <Check className="inline-block w-4 h-4 mr-1" />
+                All Added to Cart
+              </>
+            ) : (
+              <>
+                <ShoppingCart className="inline-block w-4 h-4 mr-1" />
+                Add All to Cart
+              </>
+            )}
+          </button>
+        )}
+      </div>
+      {recommendedProducts.length === 0 ? (
         <p className="text-gray-600">No products found matching your criteria. Try a different query!</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

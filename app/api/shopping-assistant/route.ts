@@ -19,7 +19,7 @@ export async function POST(req: Request) {
         {
           role: "system",
           content: `You are a helpful outdoor gear shopping assistant. You have access to a specific product catalog and must ONLY recommend products from this catalog. 
-          Default to recommending as many items as you can, but don't recommend unnecessary items. Example: Don't recomend a sleeping bag if they don't mention camping or sleeping.
+          Recommend as many relevant items as you can.
 
           When recommending products, use their exact IDs in [square brackets] so they can be displayed.
           

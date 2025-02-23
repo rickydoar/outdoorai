@@ -307,7 +307,7 @@ export const products: Product[] = [
     price: 499.99,
     category: ["electronics", "accessories"],
     weather: ["all-weather"],
-    activities: ["hiking", "mountaineering", "running"],
+    activities: ["hiking", "mountaineering", "running", "camping"],
     image: "/placeholder.svg?height=300&width=300",
   },
   {
