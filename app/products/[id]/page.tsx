@@ -33,7 +33,7 @@ export default function ProductDetailPage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link href="/products" className="text-[#1f513f] hover:underline mb-4 inline-block">
+      <Link href="/" className="text-[#1f513f] hover:underline mb-4 inline-block">
         &larr; Back to All Products
       </Link>
       <div className="grid md:grid-cols-2 gap-8">
