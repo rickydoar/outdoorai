@@ -1,0 +1,56 @@
+# Node dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js build output
+.next/
+out/
+
+# Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+turbo/
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Static exports
+out/
+
+# Optional: Ignore test coverage reports
+coverage/
+
+# Optional: Ignore Prisma migrations (if using Prisma)
+prisma/migrations/
+
+# Optional: Ignore storybook build artifacts
+.storybook-out/
+
+# Optional: Ignore local Playwright or Cypress results (if using end-to-end testing)
+playwright-report/
+cypress/screenshots/
+cypress/videos/
+
+# Optional: Ignore local Turbo repo cache (if using Turborepo)
+.turbo/
