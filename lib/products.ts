@@ -750,8 +750,6 @@ export const products: Product[] = [
     activities: ["running", "marathon"],
     image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   },
-
-  // Running Accessories
   {
     id: "running-headlamp",
     name: "Rechargeable Running Headlamp",
@@ -800,6 +798,46 @@ export const products: Product[] = [
     category: ["running", "accessories"],
     weather: ["sunny"],
     activities: ["running", "trail running"],
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+  },
+  {
+    id: "mens-swim-trunks",
+    name: "Men's Quick-Dry Swim Trunks",
+    description: "Comfortable swim shorts with mesh lining and side pockets.",
+    price: 34.99,
+    category: ["swimming", "clothing"],
+    weather: ["warm", "hot"],
+    activities: ["swimming", "beach"],
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+  },
+  {
+    id: "womens-one-piece",
+    name: "Women's Athletic One-Piece Swimsuit",
+    description: "Chlorine-resistant swimsuit with moderate coverage and cross-back straps.",
+    price: 49.99,
+    category: ["swimming", "clothing"],
+    weather: ["warm", "hot"],
+    activities: ["swimming", "beach"],
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+  },
+  {
+    id: "womens-two-piece",
+    name: "Women's Sport Bikini Set",
+    description: "Athletic two-piece with racerback top and full coverage bottom.",
+    price: 44.99,
+    category: ["swimming", "clothing"],
+    weather: ["warm", "hot"], 
+    activities: ["swimming", "beach"],
+    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+  },
+  {
+    id: "board-shorts",
+    name: "Long Board Shorts",
+    description: "Quick-drying board shorts with UPF 50+ protection.",
+    price: 39.99,
+    category: ["swimming", "clothing"],
+    weather: ["warm", "hot"],
+    activities: ["swimming", "beach", "surfing"],
     image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
   }
 ]

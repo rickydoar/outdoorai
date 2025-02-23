@@ -1,40 +1,50 @@
 "use client"
 
 import type React from "react"
-
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useCompletion } from "ai/react"
 import { ProductList } from "./ProductList"
 import { Loader2 } from "lucide-react"
+import { products } from "../../lib/products"
 
 export function ShoppingAssistant() {
   const [query, setQuery] = useState("")
   const [lastQuery, setLastQuery] = useState("")
   const [errorMessage, setErrorMessage] = useState("")
+  const [structuredResponse, setStructuredResponse] = useState<string>("")
+
   const { complete, completion, isLoading, error } = useCompletion({
     api: "/api/shopping-assistant",
     onError: (error) => {
       console.error("Completion Error:", error)
       setErrorMessage(`Error: ${error.message || "Unknown error occurred"}`)
     },
-    onFinish: (result) => {
-      console.log("Completion finished:", result)
-    },
   })
+
+  useEffect(() => {
+    if (completion) {
+      structureResponse(completion)
+    }
+  }, [completion])
+
+  const structureResponse = (text: string) => {
+    const structuredText = text.replace(/\[(\w+(-\w+)*)\]/g, (match, id) => {
+      const product = products.find((p) => p.id === id)
+      return product ? product.name : match
+    })
+    setStructuredResponse(structuredText)
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setErrorMessage("")
+    setStructuredResponse("")
     if (query.trim() && query !== lastQuery) {
       setLastQuery(query)
       try {
         console.log("Sending query:", query)
-        const result = await complete(query)
-        console.log("OpenAI Response:", result)
-        if (!result) {
-          throw new Error("No response from OpenAI")
-        }
-      } catch {
+        await complete(query)
+      } catch (error) {
         console.error("Error fetching recommendations:", error)
       }
     }
@@ -66,10 +76,10 @@ export function ShoppingAssistant() {
             <p className="text-gray-700">Fetching recommendations for: &quot;{lastQuery}&quot;</p>
           </div>
         )}
-        {completion && !isLoading && (
+        {structuredResponse && !isLoading && (
           <div className="mt-4 p-4 bg-[#f3f7f5] rounded-lg border border-[#1f513f]/20">
             <h3 className="font-semibold text-[#1f513f] mb-2">Assistant Recommendations:</h3>
-            <p className="text-gray-700">{completion}</p>
+            <div className="text-gray-700 whitespace-pre-wrap">{structuredResponse}</div>
           </div>
         )}
         {(error || errorMessage) && (
@@ -82,4 +92,3 @@ export function ShoppingAssistant() {
     </div>
   )
 }
-
