@@ -21,11 +21,6 @@ export function Header({ onCartClick }: HeaderProps) {
           <ul className="flex space-x-4 items-center">
             <li>
               <Link href="/" className="hover:underline">
-                Assistant
-              </Link>
-            </li>
-            <li>
-              <Link href="/products" className="hover:underline">
                 All Products
               </Link>
             </li>
