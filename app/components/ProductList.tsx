@@ -37,7 +37,7 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
       setAddedProducts((prev) => ({ ...prev, [product.id]: true }))
       setTimeout(() => {
         setAddedProducts((prev) => ({ ...prev, [product.id]: false }))
-      }, 500)
+      }, 300)
     },
     [addToCart],
   )
@@ -49,7 +49,7 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
     setAllAdded(true)
     setTimeout(() => {
       setAllAdded(false)
-    }, 500)
+    }, 300)
   }, [recommendedProducts, addToCart])
 
   if (isLoading) {
@@ -65,12 +65,12 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
   }
 
   return (
-    <div className="mt-8">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
-        <h2 className="text-xl font-semibold mb-2 sm:mb-0">Recommended Products</h2>
+    <div className="mt-8 bg-white rounded-lg shadow-md p-6">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
+        <h2 className="text-2xl font-bold text-[#1f513f] mb-2 sm:mb-0">Recommended Products</h2>
         {recommendedProducts.length > 0 && (
           <button
-            className={`w-full sm:w-auto px-4 py-2 rounded transition-colors ${
+            className={`w-full sm:w-auto px-4 py-2 rounded-full transition-colors flex items-center justify-center ${
               allAdded ? "bg-green-500 text-white" : "bg-[#1f513f] text-white hover:bg-[#173d2f]"
             }`}
             onClick={handleAddAllToCart}
@@ -78,12 +78,12 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
           >
             {allAdded ? (
               <>
-                <Check className="inline-block w-4 h-4 mr-1" />
+                <Check className="w-4 h-4 mr-1" />
                 All Added to Cart
               </>
             ) : (
               <>
-                <ShoppingCart className="inline-block w-4 h-4 mr-1" />
+                <ShoppingCart className="w-4 h-4 mr-1" />
                 Add All to Cart
               </>
             )}
@@ -93,11 +93,14 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
       {recommendedProducts.length === 0 ? (
         <p className="text-gray-600">No products found matching your criteria. Try a different query!</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {recommendedProducts.map((product) => (
-            <div key={product.id} className="border rounded-lg overflow-hidden shadow-lg bg-white">
+            <div
+              key={product.id}
+              className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col"
+            >
               <Link href={`/products/${product.id}`}>
-                <div className="relative h-48 sm:h-56">
+                <div className="relative h-48">
                   <Image
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
@@ -107,15 +110,19 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
                   />
                 </div>
               </Link>
-              <div className="p-4">
+              <div className="p-4 flex flex-col flex-grow">
                 <Link href={`/products/${product.id}`}>
-                  <h3 className="text-lg font-semibold mb-2 hover:text-[#1f513f]">{product.name}</h3>
+                  <h3 className="text-lg font-semibold mb-2 text-[#1f513f] hover:text-[#173d2f] transition-colors">
+                    {product.name}
+                  </h3>
                 </Link>
-                <p className="text-gray-600 mb-4 text-sm">{product.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xl font-bold text-[#1f513f]">${product.price.toFixed(2)}</span>
+                <p className="text-gray-600 text-sm mb-4 flex-grow">{product.description}</p>
+                <div className="mt-auto">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xl font-bold text-[#1f513f]">${product.price.toFixed(2)}</span>
+                  </div>
                   <button
-                    className={`px-3 py-1 sm:px-4 sm:py-2 rounded transition-colors ${
+                    className={`w-full px-4 py-2 rounded-full transition-colors flex items-center justify-center ${
                       addedProducts[product.id]
                         ? "bg-green-500 text-white"
                         : "bg-[#1f513f] text-white hover:bg-[#173d2f]"
@@ -125,11 +132,14 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
                   >
                     {addedProducts[product.id] ? (
                       <>
-                        <Check className="inline-block w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                        Added
+                        <Check className="w-4 h-4 mr-1" />
+                        Added to Cart
                       </>
                     ) : (
-                      "Add to Cart"
+                      <>
+                        <ShoppingCart className="w-4 h-4 mr-1" />
+                        Add to Cart
+                      </>
                     )}
                   </button>
                 </div>
