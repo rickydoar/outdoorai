@@ -1,17 +1,27 @@
 "use client"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { products } from "../../lib/products"
 import { useCart } from "../../lib/CartContext"
 import { Check } from "lucide-react"
 import { CategoryFilter } from "../components/CategoryFilter"
+import { useInView } from "react-intersection-observer"
+
+const PRODUCTS_PER_PAGE = 12 // Adjust this number as needed
 
 export default function ProductListPage() {
   const { addToCart } = useCart()
   const [addedProducts, setAddedProducts] = useState<{ [key: string]: boolean }>({})
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [filteredProducts, setFilteredProducts] = useState(products)
+  const [displayedProducts, setDisplayedProducts] = useState<typeof products>([])
+  const [page, setPage] = useState(1)
+
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: false,
+  })
 
   // Get unique categories
   const allCategories = Array.from(new Set(products.flatMap((product) => product.category)))
@@ -24,7 +34,25 @@ export default function ProductListPage() {
         products.filter((product) => product.category.some((cat) => selectedCategories.includes(cat))),
       )
     }
+    setPage(1)
+    setDisplayedProducts([])
   }, [selectedCategories])
+
+  useEffect(() => {
+    loadMoreProducts()
+  }, [])
+
+  useEffect(() => {
+    if (inView) {
+      loadMoreProducts()
+    }
+  }, [inView])
+
+  const loadMoreProducts = useCallback(() => {
+    const nextProducts = filteredProducts.slice(displayedProducts.length, displayedProducts.length + PRODUCTS_PER_PAGE)
+    setDisplayedProducts((prev) => [...prev, ...nextProducts])
+    setPage((prev) => prev + 1)
+  }, [filteredProducts, displayedProducts])
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategories((prev) =>
@@ -53,7 +81,7 @@ export default function ProductListPage() {
         </div>
         <div className="w-full md:w-3/4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProducts.map((product) => (
+            {displayedProducts.map((product) => (
               <div key={product.id} className="border rounded-lg overflow-hidden shadow-lg bg-white">
                 <Link href={`/products/${product.id}`}>
                   <div className="relative h-48">
@@ -90,6 +118,16 @@ export default function ProductListPage() {
               </div>
             ))}
           </div>
+          {displayedProducts.length < filteredProducts.length && (
+            <div ref={ref} className="flex justify-center mt-8">
+              <button
+                onClick={loadMoreProducts}
+                className="bg-[#1f513f] text-white px-6 py-2 rounded-lg hover:bg-[#173d2f] transition-colors"
+              >
+                Load More
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
