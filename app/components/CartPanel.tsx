@@ -3,6 +3,7 @@
 import { useCart } from "../../lib/CartContext"
 import Image from "next/image"
 import { X } from "lucide-react"
+import { useEffect, useState } from "react"
 
 interface CartPanelProps {
   isOpen: boolean
@@ -10,13 +11,33 @@ interface CartPanelProps {
 }
 
 export function CartPanel({ isOpen, onClose }: CartPanelProps) {
-  const { cart, updateQuantity, clearCart, getCartTotal } = useCart()
+  const { cart, removeFromCart, updateQuantity, clearCart, getCartTotal } = useCart()
+  const [isAnimating, setIsAnimating] = useState(false)
 
-  if (!isOpen) return null
+  useEffect(() => {
+    if (isOpen) {
+      setIsAnimating(true)
+    } else {
+      const timer = setTimeout(() => setIsAnimating(false), 300)
+      return () => clearTimeout(timer)
+    }
+  }, [isOpen])
+
+  if (!isAnimating && !isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-      <div className="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-lg transform transition-transform duration-300 ease-in-out">
+    <div
+      className={`fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 ease-in-out ${
+        isOpen ? "opacity-100" : "opacity-0"
+      }`}
+      onClick={onClose}
+    >
+      <div
+        className={`absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="flex justify-between items-center p-4 border-b">
           <h2 className="text-xl font-bold">Your Cart</h2>
           <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
@@ -53,6 +74,9 @@ export function CartPanel({ isOpen, onClose }: CartPanelProps) {
                         </button>
                       </div>
                     </div>
+                    <button className="text-red-500 hover:text-red-700 text-sm" onClick={() => removeFromCart(item.id)}>
+                      Remove
+                    </button>
                   </div>
                 ))}
               </div>
