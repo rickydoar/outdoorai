@@ -12,7 +12,7 @@ import { useInView } from "react-intersection-observer"
 import { useCompletion } from "ai/react"
 import { ProductList } from "./components/ProductList"
 
-const PRODUCTS_PER_PAGE = 12 // Adjust this number as needed
+const PRODUCTS_PER_PAGE = 12
 
 export default function HomePage() {
   // Shopping Assistant states
@@ -42,7 +42,6 @@ export default function HomePage() {
     },
   })
 
-  // Get unique categories
   const allCategories = Array.from(new Set(products.flatMap((product) => product.category)))
 
   useEffect(() => {
@@ -118,7 +117,6 @@ export default function HomePage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Shopping Assistant Section */}
       <div className="mb-12">
         <h2 className="text-2xl font-bold mb-6">Personal Shopping Assistant</h2>
         <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -158,8 +156,6 @@ export default function HomePage() {
         </div>
         <ProductList recommendations={completion} isLoading={isLoading} />
       </div>
-
-      {/* All Products Section */}
       <div>
         <h2 className="text-2xl font-bold mb-6">All Products</h2>
         <div className="flex flex-col md:flex-row">
