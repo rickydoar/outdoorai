@@ -1008,7 +1008,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["cold", "extreme-cold", "snow"],
     activities: ["skiing", "snowboarding"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdni.llbean.net/is/image/wim/520860_56288_41?hei=1095&wid=950&resMode=sharp2&defaultImage=llbprod/520860_56288_41",
   },
   {
     id: "ski-pants-mens",
@@ -1018,7 +1018,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["cold", "snow"],
     activities: ["skiing", "snowboarding"],
-    image: "https://cdni.llbean.net/is/image/wim/520860_56288_41?hei=1095&wid=950&resMode=sharp2&defaultImage=llbprod/520860_56288_41",
+    image: "https://rehall.com/cdn/shop/files/26c526b0-a56f-4eb1-9d62-a24084fedff8.jpg?v=1729571869",
   },
   {
     id: "ski-pants-womens",
