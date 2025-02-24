@@ -18,7 +18,7 @@ export const products: Product[] = [
     category: ["sleeping", "winter-gear"],
     weather: ["cold", "extreme-cold"],
     activities: ["camping", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.militarykit.com/cdn/shop/products/snugpak-navigator-sleeping-bag-olive_grande.jpg?v=1581436850",
   },
   {
     id: "tent-tall",
@@ -28,7 +28,7 @@ export const products: Product[] = [
     category: ["shelter", "tents"],
     weather: ["mild", "cold", "rain"],
     activities: ["camping", "backpacking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.bigagnes.com/cdn/shop/files/Blacktail-3-Hotel-01_600x.png?v=1734723376",
   },
   {
     id: "insulated-jacket",
@@ -38,7 +38,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold", "extreme-cold", "wind", "rain"],
     activities: ["hiking", "camping", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-nea9lcsxle/images/stencil/1280x1280/products/14831/19037/bc636764Screenshot%202023-10-03%20103226__07751.1696343591.png?c=1",
   },
   {
     id: "hiking-boots",
@@ -48,7 +48,7 @@ export const products: Product[] = [
     category: ["footwear"],
     weather: ["all-weather"],
     activities: ["hiking", "backpacking", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://meindlusa.com/cdn/shop/files/LadyKansas_Main_10920f4b-b36d-4383-aa45-3604fafe0c5f_1024x.png?v=1715187719",
   },
   {
     id: "climbing-shoes",
@@ -58,7 +58,7 @@ export const products: Product[] = [
     category: ["footwear", "rock climbing"],
     weather: ["all-weather"],
     activities: ["climbing", "rock climbing", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://lcdn.lasportivausa.com/pub/media/catalog/product/z/f/zfcs005_k00y00_skwama_blackyellow_3_4.jpg?width=700&height=700&store=en&image-type=image",
   },
   {
     id: "climbing-harness",
@@ -68,7 +68,7 @@ export const products: Product[] = [
     category: ["rock climbing"],
     weather: ["all-weather"],
     activities: ["rock climbing", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/71jGNwa-TiL._AC_UF1000,1000_QL80_.jpg",
   },
   {
     id: "backpack-65l",
@@ -78,7 +78,7 @@ export const products: Product[] = [
     category: ["bags", "backpacks"],
     weather: ["all-weather"],
     activities: ["hiking", "backpacking", "camping"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdni.llbean.net/is/image/wim/520605_53152_44?hei=1095&wid=950&resMode=sharp2&defaultImage=llbprod/520605_53152_41",
   },
   {
     id: "trekking-poles",
@@ -88,7 +88,7 @@ export const products: Product[] = [
     category: ["accessories"],
     weather: ["all-weather"],
     activities: ["hiking", "backpacking", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-hgn1l9sh63/product_images/attribute_rule_images/22705_source_1706770861.jpg",
   },
   {
     id: "camp-stove",
@@ -98,7 +98,7 @@ export const products: Product[] = [
     category: ["cooking", "camp-kitchen"],
     weather: ["all-weather"],
     activities: ["camping", "backpacking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://gofsr.com/cdn/shop/files/PortableCampStove_WhiteCyc-32.jpg?v=1723055456&width=3000",
   },
   {
     id: "water-filter",
@@ -108,7 +108,7 @@ export const products: Product[] = [
     category: ["water", "safety"],
     weather: ["all-weather"],
     activities: ["camping", "hiking", "backpacking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.aosmithatlowes.com/media/1104/ao-mf-adv-main.png",
   },
   {
     id: "down-jacket",
@@ -118,7 +118,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold", "mild"],
     activities: ["hiking", "camping", "casual"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.logowearplus.com/v/vspfiles/photos/84757-2T.jpg",
   },
   {
     id: "rain-shell",
@@ -128,7 +128,7 @@ export const products: Product[] = [
     category: ["clothing", "rain-gear"],
     weather: ["rain", "wind"],
     activities: ["hiking", "camping", "casual"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.adventurealan.com/wp-content/uploads/2021/03/Enlightened-Equipment-Visp-Rain-Jacket.jpg",
   },
   {
     id: "hiking-pants",
@@ -138,7 +138,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["mild", "warm"],
     activities: ["hiking", "camping", "casual"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.adventurealan.com/wp-content/uploads/2021/04/REI-Co-op-Sahara-convertible-Pants.jpg",
   },
   {
     id: "headlamp",
@@ -148,7 +148,7 @@ export const products: Product[] = [
     category: ["accessories", "lighting"],
     weather: ["all-weather"],
     activities: ["camping", "hiking", "emergency"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://policesecurity.com/cdn/shop/files/98730-BLACKOUT-R-HERO-SHADOW_1200x.jpg?v=1738787613",
   },
   {
     id: "bear-canister",
@@ -158,7 +158,7 @@ export const products: Product[] = [
     category: ["food-storage", "safety"],
     weather: ["all-weather"],
     activities: ["camping", "backpacking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/81g0EfnvsVL.jpg",
   },
   {
     id: "sleeping-pad",
@@ -168,7 +168,7 @@ export const products: Product[] = [
     category: ["sleeping"],
     weather: ["all-weather", "cold"],
     activities: ["camping", "backpacking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://whaletalesarchery.com/wp-content/uploads/2022/06/Klymit_InsulatedStaticV_06IVOR01C_AngleBag_v1_2000x2000_99bd02f2-bfc9-4199-bc9e-6123eb0b33a9_5000x.webp",
   },
   {
     id: "camp-chair",
@@ -178,7 +178,7 @@ export const products: Product[] = [
     category: ["furniture", "comfort"],
     weather: ["all-weather"],
     activities: ["camping", "outdoor-events"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cascademountaintech.com/cdn/shop/products/HBS-GR-21200x1200.jpg?v=1653559369",
   },
   {
     id: "hiking-socks-merino",
@@ -188,7 +188,7 @@ export const products: Product[] = [
     category: ["clothing", "footwear"],
     weather: ["cold", "mild"],
     activities: ["hiking", "camping", "backpacking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.gowithsocks.com/cdn/shop/files/merino-wool-hiking-socks-green-2-pairs.webp?v=1704644326",
   },
   {
     id: "thermal-socks",
@@ -198,7 +198,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold", "extreme-cold"],
     activities: ["camping", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-skjz97mme0/images/stencil/500x659/products/122/662/Blue-Flame-E-Tech-Bamboo-Thermal-Socks-Group__05880.1605762174.jpg?c=2",
   },
   {
     id: "base-layer-top",
@@ -208,7 +208,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["all-weather"],
     activities: ["hiking", "camping", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.rei.com/media/993d8470-f5f7-416d-b79a-537a50d910d5.jpg",
   },
   {
     id: "flannel-shirt",
@@ -218,7 +218,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["mild", "cold"],
     activities: ["camping", "casual"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-20kzykhhd5/images/stencil/1280x1280/products/3319/14726/WS04-RDPL_front__98832.1736891488.jpg?c=2",
   },
   {
     id: "softshell-pants",
@@ -228,7 +228,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["cold", "wind"],
     activities: ["hiking", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.snowpeak.com/cdn/shop/products/PA-24SU006_Slateblue_P_01_png.png?v=1709154872",
   },
   {
     id: "thermal-leggings",
@@ -238,7 +238,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold"],
     activities: ["camping", "skiing"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-r4f6haoaux/images/stencil/1280x1280/products/167/684/mens-heavyweight-thermal-bottom-long-underwear-natural-Polar-King-173-10-front__56263.1582847657.jpg?c=1",
   },
   {
     id: "hiking-shorts",
@@ -248,7 +248,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["warm"],
     activities: ["hiking", "camping"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.rei.com/media/product/2426450017",
   },
   {
     id: "winter-gloves",
@@ -258,7 +258,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear"],
     weather: ["cold", "extreme-cold"],
     activities: ["camping", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.westmarine.com/on/demandware.static/-/Sites-wm-master-catalog/default/dw73efd5eb/images/orig/P019634344_BLACK_1500.19072019023109.jpg",
   },
   {
     id: "lightweight-gloves",
@@ -298,7 +298,7 @@ export const products: Product[] = [
     category: ["sleeping", "winter-gear"],
     weather: ["extreme-cold"],
     activities: ["mountaineering", "arctic expeditions"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://target.scene7.com/is/image/Target/GUEST_50dba949-9f36-427f-86d6-a895c2143fe3",
   },
   {
     id: "gps-watch",

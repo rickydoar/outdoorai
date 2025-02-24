@@ -65,7 +65,7 @@ export function AllProducts() {
     setAddedProducts({ ...addedProducts, [product.id]: true })
     setTimeout(() => {
       setAddedProducts({ ...addedProducts, [product.id]: false })
-    }, 500)
+    }, 2000)
   }
 
   return (
@@ -88,7 +88,14 @@ export function AllProducts() {
               >
                 <Link href={`/products/${product.id}`}>
                   <div className="relative h-48">
-                    <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
+                    <Image
+                      src={product.image || "/placeholder.svg"}
+                      alt={product.name}
+                      width={300}
+                      height={300}
+                      className="object-cover w-full h-48 rounded-t-lg"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                   </div>
                 </Link>
                 <div className="p-4 flex flex-col flex-grow">

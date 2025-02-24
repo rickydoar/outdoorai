@@ -104,8 +104,9 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
                   <Image
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
-                    fill
-                    className="object-cover"
+                    width={300}
+                    height={300}
+                    className="object-cover w-full h-48 rounded-t-lg"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>

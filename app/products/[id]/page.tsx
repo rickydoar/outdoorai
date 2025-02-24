@@ -37,12 +37,14 @@ export default function ProductDetailPage() {
         &larr; Back to All Products
       </Link>
       <div className="grid md:grid-cols-2 gap-8">
-        <div className="relative h-96">
+        <div className="relative w-full aspect-square">
           <Image
             src={product.image || "/placeholder.svg"}
             alt={product.name}
             fill
             className="object-cover rounded-lg"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority
           />
         </div>
         <div>
