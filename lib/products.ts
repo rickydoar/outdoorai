@@ -268,7 +268,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["mild"],
     activities: ["hiking", "trail running"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.giro.com/dw/image/v2/BDBJ_PRD/on/demandware.static/-/Sites-giro-master-catalog/default/dwed386bb0/images/large/giro-xnetic-trail-dirt-gloves-coal-hero.jpg?sw=800&sh=800&sm=fit",
   },
   {
     id: "beanie",
@@ -278,7 +278,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["cold"],
     activities: ["camping", "hiking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCO_ubtdyNBRl2-mHqYbWqJF-glMN7nAhKQ&s",
   },
   {
     id: "sun-hat",
@@ -288,7 +288,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["warm"],
     activities: ["hiking", "camping"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://setartrading.com/cdn/shop/products/hh1009_sahara_large_brim_sun_hat_with_chin_cord_for_women_natural.jpg?v=1623037559",
   },
   {
     id: "high-end-sleeping-bag",
@@ -308,7 +308,7 @@ export const products: Product[] = [
     category: ["electronics", "accessories"],
     weather: ["all-weather"],
     activities: ["hiking", "mountaineering", "running", "camping"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://i5.walmartimages.com/seo/SUUNTO-Vertical-Adventure-GPS-Watch-Large-Screen-Offline-Maps-Solar-Charging_1fecd67b-c9a7-4d87-87fe-9c3464a483c7.74960aebd539d88c5f57594f9a6ef1f9.jpeg",
   },
   {
     id: "basic-camping-mug",
@@ -318,17 +318,17 @@ export const products: Product[] = [
     category: ["camp-kitchen"],
     weather: ["all-weather"],
     activities: ["camping", "backpacking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://i5.walmartimages.com/seo/Camping-Cup-Camping-Mug-with-Foldable-Handles-Stainless-Steel-Drinkware-Camping-Water-Boiling-Cup-Outdoor-Cups-for-Backpacking-Outdoor-260ml_8506bd81-f8e6-4ec3-82ab-e8be8945a961.25a3498a8c57bea75d3323015acf80c4.jpeg",
   },
   {
     id: "budget-rain-jacket",
-    name: "Budget Waterproof Rain Jacket",
+    name: "Waterproof Rain Jacket Shell",
     description: "Affordable rain protection, lightweight and packable",
     price: 49.99,
     category: ["clothing", "rain-gear"],
     weather: ["rain", "wind"],
     activities: ["hiking", "casual"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/71Db5BQOtjL._AC_UY1000_.jpg",
   },
   {
     id: "cheap-camping-chair",
@@ -338,7 +338,7 @@ export const products: Product[] = [
     category: ["furniture", "comfort"],
     weather: ["all-weather"],
     activities: ["camping", "outdoor-events"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://images.thdstatic.com/productImages/337c2a48-627c-4c01-acb7-330172b1bde2/svn/blue-camping-chairs-thd-e01cc401-blue-64_300.jpg",
   },
   {
     id: "bike-helmet-pro",
@@ -348,7 +348,7 @@ export const products: Product[] = [
     category: ["biking", "safety"],
     weather: ["all-weather"],
     activities: ["cycling", "mountain biking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://classiccycling.com/cdn/shop/products/limar-air-pro-cycling-helmet-721396_700x.jpg?v=1647046837",
   },
   {
     id: "mtb-full-face-helmet",
@@ -358,7 +358,7 @@ export const products: Product[] = [
     category: ["biking", "safety"],
     weather: ["all-weather"],
     activities: ["mountain biking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/51HtDmUxC-L.jpg",
   },
   {
     id: "cycling-gloves-summer",
@@ -368,7 +368,7 @@ export const products: Product[] = [
     category: ["biking", "clothing"],
     weather: ["mild", "warm"],
     activities: ["cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.cycleafer.com/cdn/shop/products/51Zk3M4RcnL.jpg?v=1672872961",
   },
   {
     id: "cycling-gloves-winter",
@@ -378,7 +378,7 @@ export const products: Product[] = [
     category: ["biking", "clothing", "winter-gear"],
     weather: ["cold", "wind"],
     activities: ["cycling", "mountain biking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.montonsports.com/media/catalog/product/cache/2a4ba1415b5422d0df23fdfdde95fd92/0/1/01_108_3.jpg",
   },
   {
     id: "cycling-bib-shorts",
@@ -388,7 +388,7 @@ export const products: Product[] = [
     category: ["biking", "clothing"],
     weather: ["warm"],
     activities: ["cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://img.santinicycling.com/us/154211-large_default/rx-bib-shorts.jpg",
   },
   {
     id: "mountain-bike-shorts",
@@ -398,7 +398,7 @@ export const products: Product[] = [
     category: ["biking", "clothing"],
     weather: ["mild", "warm"],
     activities: ["mountain biking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cycorldpro.com/cdn/shop/products/10_6378044d-3f30-465b-921c-edea68f9dfc0.jpg?v=1645079285",
   },
   {
     id: "cycling-shoes-road",
@@ -408,7 +408,7 @@ export const products: Product[] = [
     category: ["biking", "footwear"],
     weather: ["all-weather"],
     activities: ["cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.giro.com/on/demandware.static/-/Sites-giro-master-catalog/default/dw0a727920/images/large/giro-cadet-road-shoe-ano-blue-profile.jpg",
   },
   {
     id: "cycling-shoes-mtb",
@@ -418,7 +418,7 @@ export const products: Product[] = [
     category: ["biking", "footwear"],
     weather: ["all-weather"],
     activities: ["mountain biking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.giro.com/dw/image/v2/BDBJ_PRD/on/demandware.static/-/Sites-giro-master-catalog/default/dw76432bb2/images/large/giro-gauge-dirt-shoe-trail-green-spectra-yellow-profile.jpg?sw=800&sh=800&sm=fit",
   },
   {
     id: "cycling-windbreaker",
@@ -428,7 +428,7 @@ export const products: Product[] = [
     category: ["biking", "clothing"],
     weather: ["wind", "mild"],
     activities: ["cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-cmcj94sbu5/images/stencil/800x800/products/4045/18316/Lightweight_Packable_RainJacket_Safety_OffFront_Full__73219.1683045768.jpg?c=2",
   },
   {
     id: "cycling-rain-jacket",
@@ -438,7 +438,7 @@ export const products: Product[] = [
     category: ["biking", "clothing", "rain-gear"],
     weather: ["rain", "wind"],
     activities: ["cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://showerspass.com/cdn/shop/files/MensEliteIII_3_4_WEB.jpg?v=1728765385",
   },
   {
     id: "bike-light-front",
@@ -448,7 +448,7 @@ export const products: Product[] = [
     category: ["biking", "electronics"],
     weather: ["all-weather"],
     activities: ["cycling", "mountain biking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-i3pt5y1dai/images/stencil/1280x1280/products/592/2474/Planet_Bike_Beamer_200_bike_headlight_on_copy__38814.1705440722.jpg?c=1",
   },
   {
     id: "bike-light-rear",
@@ -458,7 +458,7 @@ export const products: Product[] = [
     category: ["biking", "electronics"],
     weather: ["all-weather"],
     activities: ["cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.statebicycle.com/cdn/shop/products/State-Bicycle-Co--USB-Rechargeable-LED-Bike-Light-rear-1_jpg_64a111a5-87b0-4a05-ba29-eb0dd08db36f.jpg?v=1684441760",
   },
   {
     id: "bike-pump",
@@ -468,7 +468,7 @@ export const products: Product[] = [
     category: ["biking", "accessories"],
     weather: ["all-weather"],
     activities: ["cycling", "mountain biking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://s.alicdn.com/@sc04/kf/H929130ad71cd466089f58e8e444f7f8c5.jpg_720x720q50.jpg",
   },
   {
     id: "bike-repair-kit",
@@ -478,7 +478,7 @@ export const products: Product[] = [
     category: ["biking", "accessories"],
     weather: ["all-weather"],
     activities: ["cycling", "mountain biking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/71bzH7rtJ2L.jpg",
   },
   {
     id: "hydration-pack",
@@ -488,7 +488,7 @@ export const products: Product[] = [
     category: ["biking", "accessories"],
     weather: ["all-weather"],
     activities: ["cycling", "mountain biking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://uswe.com/media/resized/489x489/uswe-rush-8-carbon-black-2085501m_001-min_5.jpg",
   },
   {
     id: "triathlon-wetsuit-mens",
@@ -498,7 +498,7 @@ export const products: Product[] = [
     category: ["triathlon", "swimming"],
     weather: ["cold", "mild"],
     activities: ["triathlon", "swimming"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.orca.com/uploads/products/large/mn12tt43-01-orca-apex-flex-men-triathlon-wetsuit-blue-flex_750x1000.jpg",
   },
   {
     id: "triathlon-wetsuit-womens",
@@ -508,7 +508,7 @@ export const products: Product[] = [
     category: ["triathlon", "swimming"],
     weather: ["cold", "mild"],
     activities: ["triathlon", "swimming"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.orca.com/uploads/products/large/mn12tt43-01-orca-apex-flex-men-triathlon-wetsuit-blue-flex_750x1000.jpg",
   },
   {
     id: "triathlon-bike",
@@ -518,7 +518,7 @@ export const products: Product[] = [
     category: ["triathlon", "biking"],
     weather: ["all-weather"],
     activities: ["triathlon", "cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.storck-bikes.com/images/categories/medium/aero3_12027.jpg",
   },
   {
     id: "clip-on-aero-bars",
@@ -528,7 +528,7 @@ export const products: Product[] = [
     category: ["triathlon", "biking"],
     weather: ["all-weather"],
     activities: ["triathlon", "cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://redshiftsports.com/cdn/shop/products/PB180300_2_3612x.jpg?v=1619823766",
   },
   {
     id: "triathlon-running-shoes",
@@ -538,7 +538,7 @@ export const products: Product[] = [
     category: ["triathlon", "running"],
     weather: ["all-weather"],
     activities: ["triathlon", "running"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR63UEiFADx-7VPbuclW7UX5bvTIACeYj0jmg&s",
   },
   {
     id: "triathlon-suit-mens",
@@ -548,7 +548,7 @@ export const products: Product[] = [
     category: ["triathlon", "clothing"],
     weather: ["warm"],
     activities: ["triathlon"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJz5Chdcptopq-4FSbPI7qpHjSxrBzRjsKw&s",
   },
   {
     id: "triathlon-suit-womens",
@@ -558,7 +558,7 @@ export const products: Product[] = [
     category: ["triathlon", "clothing"],
     weather: ["warm"],
     activities: ["triathlon"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJz5Chdcptopq-4FSbPI7qpHjSxrBzRjsKw&s",
   },
   {
     id: "swim-goggles",
@@ -568,7 +568,7 @@ export const products: Product[] = [
     category: ["triathlon", "swimming"],
     weather: ["all-weather"],
     activities: ["triathlon", "swimming"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://outdoormaster.com/cdn/shop/files/GobyAnti-fogSwimGogglesAdultsMenWomenYouth-1.jpg?v=1711097719",
   },
   {
     id: "swim-buoy",
@@ -578,7 +578,7 @@ export const products: Product[] = [
     category: ["triathlon", "swimming"],
     weather: ["all-weather"],
     activities: ["triathlon", "swimming"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://elsmoreswim.com/cdn/shop/products/open-water-swim-buoy-med-15l-owsb-15l_pvc-yellow_1_dcdb3ff7-2028-4c64-bc2a-5be80ec0bae7.jpg?v=1682958591",
   },
   {
     id: "triathlon-water-bottle",
@@ -588,7 +588,7 @@ export const products: Product[] = [
     category: ["triathlon", "accessories"],
     weather: ["all-weather"],
     activities: ["triathlon", "cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://arvadatri.com/cdn/shop/products/PFH-1L-1_ff20ca57-f940-412c-9bbe-28ced2b7b030.webp?v=1710010153",
   },
   {
     id: "energy-gels",
@@ -598,7 +598,7 @@ export const products: Product[] = [
     category: ["triathlon", "nutrition"],
     weather: ["all-weather"],
     activities: ["triathlon", "running", "cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjaG79GgERAIY9iBw7TpGVdjG_tPEd2PDxow&s",
   },
   {
     id: "race-belt",
@@ -608,7 +608,7 @@ export const products: Product[] = [
     category: ["triathlon", "accessories"],
     weather: ["all-weather"],
     activities: ["triathlon"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/61GVWrhyGsL._AC_UY1000_.jpg",
   },
   {
     id: "transition-mat",
@@ -618,7 +618,7 @@ export const products: Product[] = [
     category: ["triathlon", "accessories"],
     weather: ["all-weather"],
     activities: ["triathlon"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/51t5mauun1L._AC_SL1500_.jpg",
   },
   {
     id: "foam-roller",
@@ -628,7 +628,7 @@ export const products: Product[] = [
     category: ["triathlon", "recovery"],
     weather: ["all-weather"],
     activities: ["triathlon", "running", "cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://teeter.com/wp-content/uploads/2022/02/02_Teeter-Massage-Roam-Roller_1120.jpg",
   },
   {
     id: "smart-trainer",
@@ -638,7 +638,7 @@ export const products: Product[] = [
     category: ["triathlon", "biking", "training"],
     weather: ["indoor"],
     activities: ["triathlon", "cycling"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://us.zwift.com/cdn/shop/files/wahoo-kickr-bike-shift-smart-bike-trainer_2048x.jpg?v=1694107925",
   },
   {
     id: "running-shoes-road",
@@ -648,7 +648,7 @@ export const products: Product[] = [
     category: ["running", "footwear"],
     weather: ["all-weather"],
     activities: ["running", "training"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://assets.altrarunning.com/image/upload/f_auto,q_auto,dpr_auto/b_transparent,c_pad,ar_1.0,w_auto/w_740/d_noimage.png/AL0A85NV264-HERO?_i=AG",
   },
   {
     id: "running-shoes-trail",
@@ -658,7 +658,7 @@ export const products: Product[] = [
     category: ["running", "footwear"],
     weather: ["rain", "mud", "all-weather"],
     activities: ["trail running", "hiking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://images.asics.com/is/image/asics/1011B700_401_SR_RT_GLB?$sfcc-product$",
   },
   {
     id: "running-race-flats",
@@ -668,7 +668,7 @@ export const products: Product[] = [
     category: ["running", "footwear"],
     weather: ["all-weather"],
     activities: ["marathon", "race day"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://hips.hearstapps.com/hmg-prod/images/best-carbon-plate-shoes-6478ef7ee3f19.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*",
   },
   {
     id: "running-shirt-mens",
@@ -678,7 +678,7 @@ export const products: Product[] = [
     category: ["running", "clothing"],
     weather: ["warm", "hot"],
     activities: ["running", "training"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://pyxis.nymag.com/v1/imgs/9b2/dd4/5c79a858455045d558072a97399dc0caad-1----.rhorizontal.w600.jpg",
   },
   {
     id: "running-shirt-womens",
@@ -688,7 +688,7 @@ export const products: Product[] = [
     category: ["running", "clothing"],
     weather: ["warm", "hot"],
     activities: ["running", "training"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPN4I6ZmGR5IPY5DqBLNNEph-taLp06yy7jw&s",
   },
   {
     id: "running-shorts-mens",
@@ -698,7 +698,7 @@ export const products: Product[] = [
     category: ["running", "clothing"],
     weather: ["warm", "hot"],
     activities: ["running", "marathon"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.craftsports.us/cdn/shop/products/1908763-999000.jpg?v=1656684450",
   },
   {
     id: "running-shorts-womens",
@@ -708,7 +708,7 @@ export const products: Product[] = [
     category: ["running", "clothing"],
     weather: ["warm", "hot"],
     activities: ["running", "training"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://target.scene7.com/is/image/Target/GUEST_cf905426-8d0a-4383-b7a4-5b30d847e5d0?wid=300&hei=300&fmt=pjpeg",
   },
   {
     id: "running-tights-mens",
@@ -718,7 +718,7 @@ export const products: Product[] = [
     category: ["running", "clothing"],
     weather: ["cold", "mild"],
     activities: ["running", "training"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://supacore.com/cdn/shop/files/PRODUCTIMAGES_29_600x.png?v=1732288283",
   },
   {
     id: "running-leggings-womens",
@@ -728,7 +728,7 @@ export const products: Product[] = [
     category: ["running", "clothing"],
     weather: ["cold"],
     activities: ["running", "training"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.pearlizumi.com/cdn/shop/files/fe49db15e822d599d47645bd5a0bf8974a84e079_1000x.png?v=1735879657",
   },
   {
     id: "running-windbreaker",
@@ -738,7 +738,7 @@ export const products: Product[] = [
     category: ["running", "clothing"],
     weather: ["wind", "mild"],
     activities: ["running", "training"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn.4f.com.pl/media/catalog/product/cache/c7948d663b21982fa4a80ec214224aae/4/F/4FWAW24TTJAM553-22S-P-01-MAIN.jpg",
   },
   {
     id: "running-rain-jacket",
@@ -748,7 +748,7 @@ export const products: Product[] = [
     category: ["running", "clothing"],
     weather: ["rain"],
     activities: ["running", "marathon"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1706013649-best-running-jackets-under-armour-65afb3b812792.png?crop=1xw:1xh;center,top&resize=980:*",
   },
   {
     id: "running-headlamp",
@@ -758,7 +758,7 @@ export const products: Product[] = [
     category: ["running", "accessories"],
     weather: ["all-weather"],
     activities: ["running", "trail running"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.ledlenserusa.com/cdn/shop/products/NEO9R_gray_502324_standard_laying_headstrap.png?v=1648706090",
   },
   {
     id: "running-hydration-belt",
@@ -768,7 +768,7 @@ export const products: Product[] = [
     category: ["running", "accessories"],
     weather: ["warm", "hot"],
     activities: ["running", "marathon"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/61I1u8TvGqS._AC_UF1000,1000_QL80_.jpg",
   },
   {
     id: "running-smartwatch",
@@ -778,7 +778,7 @@ export const products: Product[] = [
     category: ["running", "electronics"],
     weather: ["all-weather"],
     activities: ["running", "training"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://i5.walmartimages.com/seo/Forerunner-245-GPS-Running-Smartwatch-in-Slate-Gray_d5f7e3aa-9a9b-458f-9819-10f2cdb979a0.7b73ae7871a4fab911577395ca16c9cc.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
   },
   {
     id: "running-compression-socks",
@@ -788,7 +788,7 @@ export const products: Product[] = [
     category: ["running", "clothing"],
     weather: ["all-weather"],
     activities: ["running", "marathon"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.sidas.com/cdn/shop/files/endurance-racing-knee.jpg?v=1722507697",
   },
   {
     id: "running-sunglasses",
@@ -798,7 +798,7 @@ export const products: Product[] = [
     category: ["running", "accessories"],
     weather: ["sunny"],
     activities: ["running", "trail running"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/61z7lE2pwvL._AC_UY1000_.jpg",
   },
   {
     id: "mens-swim-trunks",
@@ -808,7 +808,7 @@ export const products: Product[] = [
     category: ["swimming", "clothing"],
     weather: ["warm", "hot"],
     activities: ["swimming", "beach"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.legendarywhitetails.com/dw/image/v2/BLJD_PRD/on/demandware.static/-/Sites-master-us/default/dwf8c8d74f/images/mens-quick-dry-topographical-print-swim-trunks-1024-AEGT-front-laydown.jpg?sw=800&sh=800&sm=fit",
   },
   {
     id: "womens-one-piece",
@@ -818,7 +818,7 @@ export const products: Product[] = [
     category: ["swimming", "clothing"],
     weather: ["warm", "hot"],
     activities: ["swimming", "beach"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://metroswimshop.com/cdn/shop/products/2A192_907_700x.jpg?v=1700053365",
   },
   {
     id: "womens-two-piece",
@@ -828,7 +828,7 @@ export const products: Product[] = [
     category: ["swimming", "clothing"],
     weather: ["warm", "hot"], 
     activities: ["swimming", "beach"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.bfgcdn.com/1500_1500_90/150-2788-0111/oneill-womens-sport-bikini-set-bikini.jpg",
   },
   {
     id: "board-shorts",
@@ -838,7 +838,7 @@ export const products: Product[] = [
     category: ["swimming", "clothing"],
     weather: ["warm", "hot"],
     activities: ["swimming", "beach", "surfing"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.uvskinz.com/cdn/shop/files/060237-BalticAztecStripe-1_1024x.jpg?v=1710181826",
   },
   {
     id: "fishing-rod-carbon",
@@ -848,7 +848,7 @@ export const products: Product[] = [
     category: ["fishing", "gear"],
     weather: ["all-weather"],
     activities: ["fishing"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/61bk53mFRHL._AC_UF1000,1000_QL80_.jpg",
   },
   {
     id: "fishing-reel",
