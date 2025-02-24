@@ -53,7 +53,11 @@ export function ShoppingAssistant() {
 
   return (
     <div className="mb-12">
-      <h2 className="text-2xl font-bold mb-6">Personal Shopping Assistant</h2>
+      <h2 className="text-2xl font-bold mb-2 text-[#1f513f]">Personal Shopping Assistant</h2>
+      <p className="text-gray-600 mb-4 text-sm italic">
+        Our AI-powered assistant uses your input, browsing history, and past purchases to provide personalized product
+        recommendations tailored to your outdoor adventure needs.
+      </p>
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <form onSubmit={handleSubmit} className="flex gap-2 mb-4">
           <input
@@ -93,4 +97,3 @@ export function ShoppingAssistant() {
     </div>
   )
 }
-
