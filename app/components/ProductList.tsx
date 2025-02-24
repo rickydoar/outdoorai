@@ -97,16 +97,15 @@ export function ProductList({ recommendations, isLoading }: ProductListProps) {
           {recommendedProducts.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col"
+              className="bg-white rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col"
             >
               <Link href={`/products/${product.id}`}>
-                <div className="relative h-48">
+                <div className="relative aspect-square">
                   <Image
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
-                    width={300}
-                    height={300}
-                    className="object-cover w-full h-48 rounded-t-lg"
+                    fill
+                    className="object-contain rounded-t-lg"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
