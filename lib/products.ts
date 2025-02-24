@@ -858,7 +858,7 @@ export const products: Product[] = [
     category: ["fishing", "gear"],
     weather: ["all-weather"],
     activities: ["fishing"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.pennfishing.com/cdn/shop/files/Penn_Battle_III_6000_HS_Reel_2020_alt1.jpg?v=1703014585",
   },
   {
     id: "fishing-tackle-box",
@@ -868,7 +868,7 @@ export const products: Product[] = [
     category: ["fishing", "storage"],
     weather: ["all-weather"],
     activities: ["fishing"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/71UFosiZvZL.jpg",
   },
   {
     id: "fishing-bait-kit",
@@ -878,7 +878,7 @@ export const products: Product[] = [
     category: ["fishing", "gear"],
     weather: ["all-weather"],
     activities: ["fishing"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/81pnIglAAUL._AC_UF1000,1000_QL80_.jpg",
   },
   {
     id: "fishing-waders",
@@ -888,7 +888,7 @@ export const products: Product[] = [
     category: ["fishing", "clothing"],
     weather: ["cold", "mild"],
     activities: ["fishing"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn.shopify.com/s/files/1/0843/5066/5022/products/DEZ-Chest-Wader-Front_400x400.jpg?v=1701937451",
   },
   {
     id: "fishing-vest",
@@ -898,7 +898,7 @@ export const products: Product[] = [
     category: ["fishing", "clothing"],
     weather: ["mild", "warm"],
     activities: ["fishing"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://i5.walmartimages.com/seo/Mesh-Fishing-Vest-Lightweight-with-Multi-Pocket-Camping-Travel-Training_8c25c3d4-f7b5-4bee-91a9-b43009a79bca.98188f5c4dd39311f4a9d9e94dcd21dc.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
   }  ,
   {
     id: "softshell-vest",
@@ -908,7 +908,7 @@ export const products: Product[] = [
     category: ["clothing", "outerwear"],
     weather: ["mild", "wind"],
     activities: ["hiking", "camping"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.stormtechusa.com/cdn/shop/products/KSV-1_FRONT_DOLPHIN_05279bfd-918e-4e51-afed-c1428131bf0c.jpg?v=1736184846&width=1200",
   },
   {
     id: "fleece-vest",
@@ -918,7 +918,7 @@ export const products: Product[] = [
     category: ["clothing", "outerwear"],
     weather: ["mild", "cold"],
     activities: ["hiking", "camping", "casual"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.burgeonoutdoor.com/cdn/shop/products/1_56ea59e3-aec0-45e2-9ecf-4ceceff31ba7.jpg?v=1665064370&width=512",
   },
   {
     id: "athletic-tank-mens",
@@ -928,7 +928,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["warm", "hot"],
     activities: ["hiking", "running", "gym"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.boathouse.com/cdn/shop/products/men-s-performance-dri-tank-top-ctm320-fadedblue-sml-31237243142234_1400x.jpg?v=1686065561",
   },
   {
     id: "athletic-tank-womens",
@@ -938,7 +938,7 @@ export const products: Product[] = [
     category: ["clothing"],
     weather: ["warm", "hot"],
     activities: ["hiking", "running", "gym"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://franklinsports.com/media/catalog/product/cache/421465681dac8f59ae2e23f878a9878a/5/2/52760c3fx-phase1-main_6.jpg",
   },
   {
     id: "long-sleeve-hiking-shirt",
@@ -948,7 +948,7 @@ export const products: Product[] = [
     category: ["clothing", "sun-protection"],
     weather: ["warm", "mild"],
     activities: ["hiking", "camping", "fishing"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://i5.walmartimages.com/seo/33-000ft-Men-s-UPF-50-UV-Protection-Long-Sleeve-Hiking-Shirts-Breathable-Quick-Dry-Fishing-Shirts-for-Safari-Outdoor_6bf2b948-1a24-466e-af53-32ff4bb7da30.5db9e79e1799f723391b5b18f70e3810.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
   },
   {
     id: "hiking-wipes",
@@ -958,7 +958,7 @@ export const products: Product[] = [
     category: ["hygiene", "camping"],
     weather: ["all-weather"],
     activities: ["hiking", "camping", "backpacking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://shoppinkattitude.com/cdn/shop/files/64f9c1c10900927a612fd526e36a3a18c0e4ac6292e0a2e5ae018f55b3f6bd41_1024x1024@2x.jpg?v=1713976204",
   },
   {
     id: "hand-sanitizer-gel",
@@ -968,17 +968,17 @@ export const products: Product[] = [
     category: ["hygiene", "safety"],
     weather: ["all-weather"],
     activities: ["hiking", "camping", "travel"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://image.made-in-china.com/2f0j00gEGUduiIVsrH/Clip-on-Travel-Size-Antibacterial-Hand-Sanitizer-Gel.webp",
   },
   {
     id: "camping-soap",
-    name: "Eco-Friendly Camping Soap",
+    name: "Eco-Friendly Campsuds Camping Soap",
     description: "Biodegradable soap for washing dishes, hands, and even clothes.",
     price: 9.99,
     category: ["hygiene", "camping"],
     weather: ["all-weather"],
     activities: ["camping", "backpacking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.lowergear.com/img/p/8/1/9/819-tm_thickbox_default.jpg",
   },
   {
     id: "quick-dry-towel",
@@ -988,7 +988,7 @@ export const products: Product[] = [
     category: ["hygiene", "camping"],
     weather: ["all-weather"],
     activities: ["hiking", "camping", "swimming"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzscIC1dcqeHeHNuIdX-fIN9jj2Ft8rXAGqQ&s",
   },
   {
     id: "ski-jacket-mens",
@@ -998,7 +998,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["cold", "extreme-cold", "snow"],
     activities: ["skiing", "snowboarding"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdni.llbean.net/is/image/wim/520856_49200_41?hei=1095&wid=950&resMode=sharp2&defaultImage=llbprod/520856_49200_41",
   },
   {
     id: "ski-jacket-womens",
@@ -1018,7 +1018,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["cold", "snow"],
     activities: ["skiing", "snowboarding"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdni.llbean.net/is/image/wim/520860_56288_41?hei=1095&wid=950&resMode=sharp2&defaultImage=llbprod/520860_56288_41",
   },
   {
     id: "ski-pants-womens",
@@ -1028,7 +1028,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["cold", "snow"],
     activities: ["skiing", "snowboarding"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://elevenate.com/_next/image?url=https%3A%2F%2Felevenate.centracdn.net%2Fclient%2Fdynamic%2Fimages%2F704_bec8066b3d-216-22557-1-full.jpg&w=3840&q=75",
   },
   {
     id: "ski-gloves",
@@ -1038,7 +1038,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["cold", "extreme-cold", "snow"],
     activities: ["skiing", "snowboarding"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/81susELcpTL._AC_UY1000_.jpg",
   },
   {
     id: "ski-goggles",
@@ -1048,7 +1048,7 @@ export const products: Product[] = [
     category: ["accessories", "ski", "snow"],
     weather: ["cold", "snow", "sunny"],
     activities: ["skiing", "snowboarding"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-6ravsmq/images/stencil/1500x1500/products/2264/12711/09ef769cd3810f781e8ece5b8f6c816e_720x__12425.1669744127.jpg?c=2",
   },
   {
     id: "ski-helmet",
@@ -1058,7 +1058,7 @@ export const products: Product[] = [
     category: ["safety", "ski", "snow"],
     weather: ["cold", "snow"],
     activities: ["skiing", "snowboarding"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdni.llbean.net/is/image/wim/509207_1486_41?hei=1095&wid=950&resMode=sharp2&defaultImage=llbprod/509207_1486_41",
   },
   {
     id: "ski-socks",
@@ -1068,7 +1068,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["cold", "extreme-cold"],
     activities: ["skiing", "snowboarding"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://m.media-amazon.com/images/I/81-Zj7fYa7L._AC_UY1000_.jpg",
   },
   {
     id: "ski-boot-bag",
@@ -1078,7 +1078,7 @@ export const products: Product[] = [
     category: ["bags", "ski", "travel"],
     weather: ["all-weather"],
     activities: ["skiing", "snowboarding", "travel"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-x0wq46vtjo/images/stencil/1280x1280/products/122/1411/thermal-trekker-heated-ski-boot-bag-in-diamond-grey-black-white-angel-right-view-1__16470.1694807701.jpg?c=1",
   },
   {
     id: "heated-gloves",
@@ -1088,7 +1088,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["extreme-cold"],
     activities: ["skiing", "snowboarding", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://www.ororowear.com/cdn/shop/files/1_23cfc84b-8938-40dd-85bb-0d75dce4cd51.jpg?v=1687683683",
   },
   {
     id: "heated-socks",
@@ -1098,7 +1098,7 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["extreme-cold"],
     activities: ["skiing", "snowboarding", "hiking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://ae01.alicdn.com/kf/S39d74c8145b84142ba982579eff97344V.jpg",
   },
   {
     id: "snowshoes",
@@ -1108,7 +1108,7 @@ export const products: Product[] = [
     category: ["footwear", "winter-gear", "snow"],
     weather: ["cold", "snow"],
     activities: ["snowshoeing", "hiking"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://cdn11.bigcommerce.com/s-dses6v/images/stencil/1280x1280/products/7865/48134/AT4__31519.1645044064.jpg?c=2?imbypass=on",
   },
   {
     id: "ski-backpack",
@@ -1118,7 +1118,7 @@ export const products: Product[] = [
     category: ["bags", "ski", "safety"],
     weather: ["cold", "snow"],
     activities: ["skiing", "snowboarding", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://dxtb1rh8tbbvs.cloudfront.net/cache-buster-11738887747/ORTOVOX/mediaroom-product-archive/Backpacks/Ski%20touring%20backpacks/320717/image-thumb__320717__pds__product_png/46484-88201-HAUTE_ROUTE_32_arctic_grey-B-01.png",
   },
   {
     id: "avalanche-beacon",
@@ -1128,7 +1128,7 @@ export const products: Product[] = [
     category: ["safety", "ski"],
     weather: ["cold", "snow"],
     activities: ["backcountry skiing", "snowboarding", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://i5.walmartimages.com/seo/Backcountry-Access-Tracker-S-Avalanche-Beacon_b03c5236-a3a9-4c86-8b7e-d042e567a28f.6a03a700d564f4cc5f8ed7351709ce92.jpeg",
   },
   {
     id: "balaclava",
@@ -1138,6 +1138,6 @@ export const products: Product[] = [
     category: ["clothing", "winter-gear", "ski"],
     weather: ["cold", "wind", "snow"],
     activities: ["skiing", "snowboarding", "mountaineering"],
-    image: "https://adexusa.com/wp-content/uploads/2022/11/Floor-Square-en-rWt2QxfUBxF2UvRz.jpg",
+    image: "https://rockbrosusa.com/cdn/shop/files/1_1412e9c4-51b4-410f-bd9b-a57ce19f8be5.jpg?v=1731907719&width=2048",
   }  
 ]
