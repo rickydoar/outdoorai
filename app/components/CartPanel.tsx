@@ -2,9 +2,10 @@
 
 import { useCart } from "../../lib/CartContext"
 import Image from "next/image"
-import { X } from "lucide-react"
+import { X, ShoppingCart, Trash2 } from "lucide-react"
 import { useEffect, useState } from "react"
 import { CartRecommendations } from "./CartRecommendations"
+import { useRouter } from "next/navigation"
 
 interface CartPanelProps {
   isOpen: boolean
@@ -14,6 +15,7 @@ interface CartPanelProps {
 export function CartPanel({ isOpen, onClose }: CartPanelProps) {
   const { cart, removeFromCart, updateQuantity, clearCart, getCartTotal } = useCart()
   const [isAnimating, setIsAnimating] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     if (isOpen) {
@@ -25,6 +27,11 @@ export function CartPanel({ isOpen, onClose }: CartPanelProps) {
   }, [isOpen])
 
   if (!isAnimating && !isOpen) return null
+
+  const handleCheckout = () => {
+    onClose()
+    router.push("/checkout")
+  }
 
   return (
     <div
@@ -91,18 +98,20 @@ export function CartPanel({ isOpen, onClose }: CartPanelProps) {
         </div>
         <div className="p-4 border-t bg-white">
           <p className="text-xl font-bold mb-4">Total: ${getCartTotal().toFixed(2)}</p>
-          <div className="flex justify-between">
+          <div className="flex flex-col space-y-2">
             <button
-              className="bg-[#1f513f] text-white px-4 py-2 rounded hover:bg-[#173d2f] transition-colors w-full mr-2"
-              onClick={() => alert("Checkout functionality not implemented")}
+              className="bg-[#1f513f] text-white px-4 py-2 rounded-full hover:bg-[#173d2f] transition-colors w-full flex items-center justify-center"
+              onClick={handleCheckout}
             >
+              <ShoppingCart className="w-5 h-5 mr-2" />
               Checkout
             </button>
             <button
-              className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors"
+              className="border border-[#1f513f] text-[#1f513f] px-4 py-2 rounded-full hover:bg-[#1f513f] hover:text-white transition-colors w-full flex items-center justify-center"
               onClick={clearCart}
             >
-              Clear
+              <Trash2 className="w-5 h-5 mr-2" />
+              Clear Cart
             </button>
           </div>
         </div>
