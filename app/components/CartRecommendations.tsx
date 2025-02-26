@@ -40,12 +40,15 @@ export function CartRecommendations({ cartItems, compact = false, onProductClick
     <div className={`${compact ? "mt-4" : "mt-12"} bg-gray-50 rounded-lg p-4`}>
       <h2 className={`${compact ? "text-lg" : "text-xl"} font-bold text-[#1f513f] mb-2`}>Complete Your Adventure</h2>
       <p className={`text-gray-600 mb-4 ${compact ? "text-sm" : ""}`}>These items pair well with your cart:</p>
-      <div className="space-y-4">
+      <div className={`${compact ? "space-y-4" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"}`}>
         {recommendations.map((product) => (
           <Link href={`/products/${product.id}`} key={product.id} onClick={onProductClick}>
             <div
               className="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:scale-105 flex items-center"
-              style={{ height: compact ? "120px" : "160px" }}
+              style={{
+                height: compact ? "120px" : "160px",
+                width: compact ? "100%" : "300px", // Set a fixed width for non-compact view
+              }}
             >
               <div className="relative h-full" style={{ width: compact ? "120px" : "160px" }}>
                 <Image
@@ -64,7 +67,7 @@ export function CartRecommendations({ cartItems, compact = false, onProductClick
                   <p className="text-sm text-gray-600 mt-1">${product.price.toFixed(2)}</p>
                 </div>
                 <button
-                  className={`w-full mt-2 px-2 py-1 text-sm rounded transition-colors flex items-center justify-center ${
+                  className={`w-full mt-2 px-2 py-1 text-sm rounded-full transition-colors flex items-center justify-center ${
                     addedProducts[product.id] ? "bg-green-500 text-white" : "bg-[#1f513f] text-white hover:bg-[#173d2f]"
                   }`}
                   onClick={(e) => handleAddToCart(e, product)}
