@@ -9,10 +9,6 @@ export default function HomePage() {
   return (
     <div className="bg-white min-h-screen">
       <div className="container mx-auto px-4 py-8">
-        <section className="mb-12">
-          <h1 className="text-4xl font-bold text-[#1f513f] mb-4">Welcome to Outdoor Adventure</h1>
-          <p className="text-xl text-gray-600">Discover the best gear for your next adventure</p>
-        </section>
         <Suspense fallback={<div className="text-center">Loading Shopping Assistant...</div>}>
           <ShoppingAssistant />
         </Suspense>
