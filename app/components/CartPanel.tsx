@@ -4,6 +4,7 @@ import { useCart } from "../../lib/CartContext"
 import Image from "next/image"
 import { X } from "lucide-react"
 import { useEffect, useState } from "react"
+import { CartRecommendations } from "./CartRecommendations"
 
 interface CartPanelProps {
   isOpen: boolean
@@ -33,7 +34,7 @@ export function CartPanel({ isOpen, onClose }: CartPanelProps) {
       onClick={onClose}
     >
       <div
-        className={`absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
+        className={`absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-lg transform transition-transform duration-300 ease-in-out overflow-hidden flex flex-col ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
         onClick={(e) => e.stopPropagation()}
@@ -44,11 +45,11 @@ export function CartPanel({ isOpen, onClose }: CartPanelProps) {
             <X size={24} />
           </button>
         </div>
-        <div className="p-4 overflow-y-auto" style={{ maxHeight: "calc(100vh - 180px)" }}>
-          {cart.length === 0 ? (
-            <p>Your cart is empty.</p>
-          ) : (
-            <>
+        <div className="flex-grow overflow-y-auto">
+          <div className="p-4">
+            {cart.length === 0 ? (
+              <p>Your cart is empty.</p>
+            ) : (
               <div className="space-y-4">
                 {cart.map((item) => (
                   <div key={item.id} className="flex items-center border-b pb-4">
@@ -80,10 +81,15 @@ export function CartPanel({ isOpen, onClose }: CartPanelProps) {
                   </div>
                 ))}
               </div>
-            </>
+            )}
+          </div>
+          {cart.length > 0 && (
+            <div className="px-4 pb-4">
+              <CartRecommendations cartItems={cart} />
+            </div>
           )}
         </div>
-        <div className="absolute bottom-0 left-0 right-0 p-4 border-t bg-white">
+        <div className="p-4 border-t bg-white">
           <p className="text-xl font-bold mb-4">Total: ${getCartTotal().toFixed(2)}</p>
           <div className="flex justify-between">
             <button

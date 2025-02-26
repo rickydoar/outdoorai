@@ -137,12 +137,6 @@ export function AllProducts() {
           </div>
           {displayedProducts.length < filteredProducts.length && (
             <div ref={ref} className="flex justify-center mt-8">
-              <button
-                onClick={loadMoreProducts}
-                className="bg-[#1f513f] text-white px-6 py-2 rounded-full hover:bg-[#173d2f] transition-colors"
-              >
-                Load More
-              </button>
             </div>
           )}
         </div>
