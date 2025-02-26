@@ -85,7 +85,7 @@ export function CartPanel({ isOpen, onClose }: CartPanelProps) {
           </div>
           {cart.length > 0 && (
             <div className="px-4 pb-4">
-              <CartRecommendations cartItems={cart} />
+              <CartRecommendations cartItems={cart} compact={true} onProductClick={onClose} />
             </div>
           )}
         </div>

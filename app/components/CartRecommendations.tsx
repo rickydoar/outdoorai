@@ -12,9 +12,10 @@ import { products, type Product } from "../../lib/products"
 interface CartRecommendationsProps {
   cartItems: Product[]
   compact?: boolean
+  onProductClick?: () => void
 }
 
-export function CartRecommendations({ cartItems, compact = false }: CartRecommendationsProps) {
+export function CartRecommendations({ cartItems, compact = false, onProductClick }: CartRecommendationsProps) {
   const { addToCart } = useCart()
   const [addedProducts, setAddedProducts] = useState<{ [key: string]: boolean }>({})
 
@@ -41,7 +42,7 @@ export function CartRecommendations({ cartItems, compact = false }: CartRecommen
       <p className={`text-gray-600 mb-4 ${compact ? "text-sm" : ""}`}>These items pair well with your cart:</p>
       <div className="space-y-4">
         {recommendations.map((product) => (
-          <Link href={`/products/${product.id}`} key={product.id}>
+          <Link href={`/products/${product.id}`} key={product.id} onClick={onProductClick}>
             <div
               className="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:scale-105 flex items-center"
               style={{ height: compact ? "120px" : "160px" }}
